@@ -1,0 +1,37 @@
+{
+    "include": ["./src/**/*"],
+    // "exclude": ["./hello/*"]
+
+    "compilerOptions": {
+        // target 用来指定 TS 被编译成 ES 的版本
+        "target": "es6",     // 可以写 es3 | es5 | es6 | ...
+        // module 指定要使用的模块化规范
+        "module": "amd",     // 可以写 es6 | commonjs | ...
+        // lib 指定项目中要使用的库
+        "lib": ["es6", "dom"],   // 指定之后写代码会有提示，一般不用配置 lib，使用默认的就行
+        // outDir 指定编译后文件所在的目录
+        "outDir": "./dist",
+        // outFile 将代码合并为一个文件
+        "outFile": "./dist/app.js",
+        // allowJs 表示是否编译 js 文件，默认是 false，不编译 js 文件
+        "allowJs": false,
+        // checkJs 表示是否检查 js 代码是否符合语法规范，默认是 false
+        "checkJs": false,
+        // removeComments 表示是否移除注释，默认 false
+        "removeComments": false,
+        // noEmit 表示不生成编译后的文件，默认 false
+        "noEmit": false,
+        // noEmitOnError：当有错误时不生成编译后的文件，默认 false
+        "noEmitOnError": false,
+        // alwaysStrict：编译后的文件是否使用严格模式，默认 false
+        "alwaysStrict": false,
+        // noImplicitAny：不允许隐式的 any 类型，默认 false
+        "noImplicitAny": true,
+        // noImplicitThis：不允许不明确类型的 this，默认 false
+        "noImplicitThis": false,
+        // strictNullChecks：严格的检查空值，默认 false
+        "strictNullChecks": false,
+        // strict：所有严格检查的总开关，默认 false
+        "strict": false
+    }
+}
