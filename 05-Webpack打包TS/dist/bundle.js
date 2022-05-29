@@ -1,0 +1,1 @@
+!function(){"use strict";function o(o,n){return o+n}console.log(o(1,2)),console.log(o(10,20)),console.log("hi");var n={name:"孙悟空",age:20};console.log(n),console.log(Promise)}();
