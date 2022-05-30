@@ -9,7 +9,8 @@ module.exports = {
         filename: 'bundle.js',
         clean: true,
         environment: {
-            arrowFunction: false
+            arrowFunction: false,
+            const: false
         }
     },
     module: {
