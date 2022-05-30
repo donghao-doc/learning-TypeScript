@@ -16,8 +16,13 @@ class Snake {
     }
     // 设置蛇头坐标
     set position({ x, y }) {
-        this.head.style.left = `${x}px`
-        this.head.style.top = `${y}px`
+        const width = this.snake.parentElement!.offsetWidth - 14
+        const height = this.snake.parentElement!.offsetHeight - 14
+        if (x < 0 || x > width || y < 0 || y > height) {
+            throw new Error('游戏结束')
+        }
+        if (this.position.x !== x) this.head.style.left = `${x}px`
+        if (this.position.y !== y) this.head.style.top = `${y}px`
     }
     // 增加蛇身操作
     addBody() {
